@@ -2,49 +2,41 @@ use std::collections::HashMap;
 
 #[derive(Debug)]
 struct Employee {
+    id: u32,
     name: String,
-    age: u32,
-    department: String,
 }
 
 fn main() {
+    let mut emp_count: u32 = 0;
+    
     let mut employees: HashMap<String, Vec<Employee>> = HashMap::new();
 
-    let employee1 =  Employee {
-        name: String::from("John"),
-        age: 30,
-        department: String::from("Sales"),
-    };
-
-    let employee2 = Employee {
-        name: String::from("Smith"),
-        age: 35,
-        department: String::from("Marketing")
-    };
+    add_employee("Eng".to_string(), "Ananya".to_string(), &mut emp_count, &mut employees);
+    add_employee("Eng".to_string(), "Nishanth".to_string(), &mut emp_count, &mut employees);
+    add_employee("Dsg".to_string(), "PRaks".to_string(), &mut emp_count, &mut employees);
     
-    let employee3 = Employee {
-        name: String::from("Mike"),
-        age: 32,
-        department: String::from("Engineering")
-    };
-
-    employees.entry(String::from("Group 1"))
-        .or_insert(Vec::new())
-        .push(employee1);
-
-    employees.entry(String::from("Group 1"))
-        .or_insert(Vec::new())
-        .push(employee2);
-
-    employees.entry(String::from("Group 2"))
-        .or_insert(Vec::new())
-        .push(employee3);
-
-
-    for (group, employee_vec) in &employees {
-        println!("Group: {}", group);
-        for emp in employee_vec {
+    println!("total employees: {emp_count}");
+    
+    for (dept, emp_vec) in &employees {
+        println!("\nDepartment: {}", dept);
+        for emp in emp_vec {
             println!("{:?}", emp);
         }
     }
+}
+
+fn add_employee(dept: String, emp_name: String, emp_count: &mut u32, employees: &mut HashMap<String, Vec<Employee>>) {
+    *emp_count+=1;
+    
+    let emp_id = emp_count.clone();
+    
+    let emp = Employee {
+        id: emp_id,
+        name: emp_name,
+    };
+    
+    employees
+        .entry(dept)
+        .or_insert(Vec::new())
+        .push(emp);
 }
