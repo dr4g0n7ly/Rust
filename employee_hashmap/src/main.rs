@@ -28,17 +28,17 @@ fn main() {
             let mut dept = String::new();
             let mut name = String::new();
 
-            println("Enter department: ");
+            println!("Enter department: ");
             io::stdin()
                 .read_line(&mut dept)
                 .expect("failed to read line");
 
-            println("Enter name: ");
+            println!("Enter name: ");
             io::stdin()
                 .read_line(&mut name)
                 .expect("failed to read line");
 
-            add_employee(dept, name, emp_count, employees);
+            add_employee(dept, name, &mut emp_count, &mut employees);
         }
     }
 
