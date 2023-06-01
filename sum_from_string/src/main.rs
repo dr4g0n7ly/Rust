@@ -1,14 +1,19 @@
-fn to_int(s: &str) -> i32 {
-    s.parse().unwrap_or(0) // unparsable numbers are considered 0s
+use std::num::ParseIntError;
+
+#[derive(Debug)]
+struct SummationError;
+
+fn to_int(s: &str) -> Result<i32, ParseIntError> {
+    s.parse()
 }
 
-fn sum_str_vec(strs: Vec<String>) -> String {
+fn sum_str_vec(strs: Vec<String>) -> Result<String, SummationError> {
     let mut accum: i32 = 0;
     for s in strs {
-        accum += to_int(&s);
+        accum += to_int(&s).map_err(|_| SummationError)?;
     }
 
-    return accum.to_string();
+    Ok(accum.to_string())
 }
 
 fn main() {
