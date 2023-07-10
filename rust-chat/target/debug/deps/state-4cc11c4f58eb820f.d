@@ -1,0 +1,12 @@
+C:\Users\nisha\Documents\GitHub\Rust\rust-chat\target\debug\deps\state-4cc11c4f58eb820f.rmeta: C:\Users\nisha\.cargo\registry\src\index.crates.io-6f17d22bba15001f\state-0.5.3\src\lib.rs C:\Users\nisha\.cargo\registry\src\index.crates.io-6f17d22bba15001f\state-0.5.3\src\ident_hash.rs C:\Users\nisha\.cargo\registry\src\index.crates.io-6f17d22bba15001f\state-0.5.3\src\storage.rs C:\Users\nisha\.cargo\registry\src\index.crates.io-6f17d22bba15001f\state-0.5.3\src\init.rs C:\Users\nisha\.cargo\registry\src\index.crates.io-6f17d22bba15001f\state-0.5.3\src\shim.rs C:\Users\nisha\.cargo\registry\src\index.crates.io-6f17d22bba15001f\state-0.5.3\src\container.rs
+
+C:\Users\nisha\Documents\GitHub\Rust\rust-chat\target\debug\deps\libstate-4cc11c4f58eb820f.rlib: C:\Users\nisha\.cargo\registry\src\index.crates.io-6f17d22bba15001f\state-0.5.3\src\lib.rs C:\Users\nisha\.cargo\registry\src\index.crates.io-6f17d22bba15001f\state-0.5.3\src\ident_hash.rs C:\Users\nisha\.cargo\registry\src\index.crates.io-6f17d22bba15001f\state-0.5.3\src\storage.rs C:\Users\nisha\.cargo\registry\src\index.crates.io-6f17d22bba15001f\state-0.5.3\src\init.rs C:\Users\nisha\.cargo\registry\src\index.crates.io-6f17d22bba15001f\state-0.5.3\src\shim.rs C:\Users\nisha\.cargo\registry\src\index.crates.io-6f17d22bba15001f\state-0.5.3\src\container.rs
+
+C:\Users\nisha\Documents\GitHub\Rust\rust-chat\target\debug\deps\state-4cc11c4f58eb820f.d: C:\Users\nisha\.cargo\registry\src\index.crates.io-6f17d22bba15001f\state-0.5.3\src\lib.rs C:\Users\nisha\.cargo\registry\src\index.crates.io-6f17d22bba15001f\state-0.5.3\src\ident_hash.rs C:\Users\nisha\.cargo\registry\src\index.crates.io-6f17d22bba15001f\state-0.5.3\src\storage.rs C:\Users\nisha\.cargo\registry\src\index.crates.io-6f17d22bba15001f\state-0.5.3\src\init.rs C:\Users\nisha\.cargo\registry\src\index.crates.io-6f17d22bba15001f\state-0.5.3\src\shim.rs C:\Users\nisha\.cargo\registry\src\index.crates.io-6f17d22bba15001f\state-0.5.3\src\container.rs
+
+C:\Users\nisha\.cargo\registry\src\index.crates.io-6f17d22bba15001f\state-0.5.3\src\lib.rs:
+C:\Users\nisha\.cargo\registry\src\index.crates.io-6f17d22bba15001f\state-0.5.3\src\ident_hash.rs:
+C:\Users\nisha\.cargo\registry\src\index.crates.io-6f17d22bba15001f\state-0.5.3\src\storage.rs:
+C:\Users\nisha\.cargo\registry\src\index.crates.io-6f17d22bba15001f\state-0.5.3\src\init.rs:
+C:\Users\nisha\.cargo\registry\src\index.crates.io-6f17d22bba15001f\state-0.5.3\src\shim.rs:
+C:\Users\nisha\.cargo\registry\src\index.crates.io-6f17d22bba15001f\state-0.5.3\src\container.rs:
