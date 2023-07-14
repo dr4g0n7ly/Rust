@@ -2,6 +2,8 @@ use leptos::*;
 use leptos_meta::*;
 use leptos_router::*;
 
+use crate::model::conversation::{Conversation, Message};
+
 #[component]
 pub fn App(cx: Scope) -> impl IntoView {
     // Provides context that manages stylesheets, titles, meta tags, etc.
@@ -30,13 +32,21 @@ pub fn App(cx: Scope) -> impl IntoView {
 /// Renders the home page of your application.
 #[component]
 fn HomePage(cx: Scope) -> impl IntoView {
-    // Creates a reactive value to update the button
-    let (count, set_count) = create_signal(cx, 0);
-    let on_click = move |_| set_count.update(|count| *count += 1);
-
+    
+    let (conversation, set_conversation) = create_signal(cx, Conversation::new());
+    
+    let send = create_action(cx, move |new_message: &String| {
+        let user_message = Message {
+            text: new_message.clone(),
+            user: true,
+        };
+        set_conversation.update(move |c| {
+            c.messages.push(user_message);
+        });
+    });
     view! { cx,
-        <h1>"Welcome to Rust Llama!"</h1>
-        <button on:click=on_click>"Click Me: " {count}</button>
+        <ChatArea conversation/>
+        <TextArea send/>
     }
 }
 
